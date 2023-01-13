@@ -96,7 +96,7 @@ ul li a {
   color: var(--clr-white);
 }
 .nav-menu img {
-  width: 100%;
+  width: 51px;
   height: 51px;
   margin-left: 36px;
 }
@@ -176,4 +176,149 @@ hr {
 
 .blog-author a {
   color: var(--clr-primary);
+}
+
+/* 
+====== Latest Course ====== 
+*/
+.latest-course {
+  background: var(--clr-white);
+  padding: 23px 33px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.courses {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+}
+
+.course {
+  box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+  padding: 13px;
+}
+
+.course-thumbnail img {
+  width: 224px;
+  height: 104px;
+}
+
+.course-title {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: var(--ff-secondary);
+  color: #1e1e1e;
+  margin: 20px 0 8px 0;
+}
+
+.course-author {
+  font-size: 14px;
+  font-family: var(--ff-secondary);
+  color: #ed6b4f;
+  margin-bottom: 12px;
+}
+
+.fa-star {
+  color: #ffc014;
+  font-size: 12px;
+}
+
+.empty {
+  color: #aeaeae;
+}
+
+.course-info {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.course-info span {
+  color: #a2a2a2;
+  font-size: 14px;
+}
+
+.course-duration {
+  background: #ffe4e8;
+  color: #ff4a60;
+}
+
+.fa-clock {
+  font-size: 20px;
+}
+
+.course-duration {
+  background: #ffe4e8;
+  color: #ff4a60;
+  padding: 5px;
+  border-radius: 15px;
+  margin-left: 25px;
+}
+
+/* 
+====== Media Queries ====== 
+*/
+
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .nav-menu {
+    justify-content: center;
+  }
+  .players-and-blogs {
+    margin-top: 0px;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blog {
+    flex-direction: column;
+  }
+  .blog-info {
+    text-align: center;
+  }
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .course-thumbnail img {
+    margin: 0 auto;
+    display: block;
+  }
+  .course-info {
+    justify-content: space-between;
+  }
+  .latest-course {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .navbar {
+    padding: 0 30px;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .latest-course {
+    margin-bottom: 0;
+  }
 }
